@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-#include <SerialStream.h> // Install the SerialStream library for serial communication
+#include <libserial/SerialStream.h> // Install the SerialStream library for serial communication
 
 int main() {
     using namespace LibSerial;
