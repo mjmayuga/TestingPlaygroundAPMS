@@ -1,3 +1,4 @@
+import hashlib
 # Define the SHA-1 hash function
 def sha1(data):
     def left_rotate(n, b):
@@ -61,5 +62,3 @@ def sha1(data):
     digest = (h0 << 128) | (h1 << 96) | (h2 << 64) | (h3 << 32) | h4
     return digest.to_bytes(20, byteorder='big')
 
-# Serial port configuration
-ser = serial.Serial('/dev/ttyACM0', 9600)
